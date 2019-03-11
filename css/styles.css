@@ -1,0 +1,592 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Main Layout*/
+body {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    background-color: #6fadc9;
+    color: #666666;
+    background-image: url(../images/page_bg.jpg);
+    background-repeat: repeat-x;
+    background-position: top;
+}
+
+a:link {
+    color: #2d9fce;
+}
+
+a:visited {
+    color: #2d9fce;
+}
+
+a:hover {
+    color: #2d9fce;
+    text-decoration: none;
+}
+
+a:active {
+    color: #2d9fce;
+}
+
+#wrapper {
+    width: 980px;
+    margin: 0px auto;
+    background-image: url(../images/content_bg.gif);
+    background-repeat: repeat-y;
+    background-position: left;
+    min-height: 770px; /*minimum height of the page, this keeps it consistent when creating shorter pages.*/
+}
+
+#header {
+    height: 234px;
+    clear: both;
+    background-image: url(../images/header_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+#header_logo {
+    width: 241px;
+    height: 125px;
+    margin: 0px 0px 0px 25px;
+    float: left;
+}
+
+#side_menu_container {
+    width: 163px;
+    float: left;
+}
+
+/*Menu*/
+
+#side_menu {
+    width: 163px;
+}
+
+ul#side_menu {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul#side_menu li {
+    list-style: none;
+    margin: 0px;
+    border-bottom: 1px solid #d5e3e9;
+}
+
+ul#side_menu a {
+    color: #00264e; /*this is the color of the menu text*/
+    padding: 6px 0px 6px 20px; /*spacing around the text, top right bottom left*/
+    text-decoration: none; /*no underline*/
+    font: 12px Arial, Helvetica, sans-serif; /*font size and font*/
+    font-weight: bold;
+    letter-spacing: 1px; /*space between each letter in the word*/
+    display: block; /*make the background go all the way to the edges*/
+}
+
+ul#side_menu a:hover {
+    color: #2d9fce; /*when the mouse is placed on the button change to this colour*/
+    background-color: #FFF; /*highlight the background behind the text*/
+}
+
+/*Box under menu*/
+.side_menu_box {
+    width: 152px; /*164 minus padding*/
+    margin: 20px 0 40px 0;
+    background-color: #dfecf2;
+    padding: 10px 6px;
+}
+
+.side_menu_box .top {
+    color: #2d9fce;
+    font-family: "Liberation Sans", Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.side_menu_box p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.side_menu_box_field {
+    background-color: #fff !important;
+    border: 1px solid #d5e3e9 !important;
+    margin: 5px 0px 0px 0px;
+    color: #6fadc9;
+    width: 140px;
+    padding: 5px;
+    font-size: 11px;
+}
+
+.side_menu_box_button {
+    margin: 5px 0 0 0;
+    float: right;
+}
+
+#info {
+    width: 164px; /*164 minus padding*/
+    font-family: "Liberation Sans", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #2d9fce;
+    text-align: center;
+}
+
+#content_body {
+    padding: 0 15px 0 0; /*padding on the right is because the column if floating to the right*/
+    line-height: 1.5em;
+    width: 769px; /*784px minus padding*/
+    float: right;
+}
+
+/*footer*/
+#footer {
+    height: 28px;
+    width: 960px;
+    margin: 0 auto;
+    color: #e0edfd;
+    font-size: 10px;
+    padding: 8px 10px 0 10px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    clear: both;
+    border-top: #3f91b7 5px solid;
+}
+
+#footer a, #footer a:link, #footer a:visited {
+    color: #e0edfd;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+#footer .right {
+    width: 280px; /*make this wider to fit more links in your footer*/
+    float: right;
+    text-align: right;
+}
+
+#footer .right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#footer .right ul li {
+    float: left;
+    margin: 0;
+    padding: 0 3px 0 3px;
+}
+
+#footer .right ul li a, #footer .right ul li a:link, #footer .right ul li a:visited {
+    color: #e0edfd;
+    text-decoration: none;
+}
+
+#footer .right ul li a:hover {
+    text-decoration: underline;
+}
+
+#footer .left {
+    width: 400px;
+    float: left;
+}
+
+/* General Content*/
+
+.padding_bottom {
+    padding-bottom: 5px;
+}
+
+.clear {
+    clear: both;
+    visibility: hidden;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+form {
+    margin: 0px;
+    padding: 0px;
+}
+
+.forms_field {
+    background-color: #fff !important;
+    border: 1px solid #d5e3e9 !important;
+    margin: 3px 0px 0px 0px;
+    color: #6fadc9;
+    height: 18px;
+    padding: 2px;
+}
+
+.forms_button {
+    background-color: #461614 !important;
+    border: 1px solid #70231d !important;
+    margin: 3px 0px 0px 0px;
+    color: #dd9b9b;
+    height: 23px;
+    padding: 2px;
+}
+
+h1 {
+    font-family: "Liberation Sans", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2d9fce;
+    margin-top: 0px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #f4afaf;
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
+}
+
+.image_border {
+    border-bottom: 3px solid #631714;
+    margin: 3px 3px 0px 3px;
+    padding: 0px;
+}
+
+hr {
+    border: 0;
+    color: #631714;
+    background-color: #631714;
+    height: 1px;
+    width: 100%;
+}
+
+.size20 {
+    font-size: 20px;
+}
+
+ul.arrows {
+}
+
+.arrows li {
+    list-style: url(../images/icon_arrow.gif);
+    line-height: 25px; /*spacing between rows*/
+}
+
+.left_column {
+    width: 240px;
+    float: left;
+}
+
+.right_image {
+    float: right;
+    padding-left: 25px;
+}
+
+.book_button {
+    text-align: left;
+    margin-left: 140px;
+    clear: both;
+}
+
+
+/*special fonts*/
+
+@font-face {
+    font-family: "Liberation Sans";
+    src: url(http://tf.dtbaker.com.au/template/curvy_clean/font/LiberationSans-Regular.ttf) format("truetype");
+}
+
+/*home page*/
+
+#home_banner {
+    width: 784px;
+    height: 233px;
+    position: absolute;
+    margin: 192px 0 0 183px;
+}
+
+.left_home {
+    width: 530px;
+    float: left;
+    margin: 200px 0 0 0px;
+}
+
+.right_home {
+    width: 215px;
+    float: right;
+    margin: 200px 0 0 0px;
+}
+
+ul.image_list {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.image_list li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px 0 10px 0; /*spacing between the images*/
+}
+
+/*coloured boxes*/
+ul.box_list {
+    margin: 0px;
+    padding: 0px;
+}
+
+.box_list li {
+    width: 254px;
+    list-style: none;
+    float: left;
+    margin: 0px;
+    padding: 0 10px 10px 0;
+}
+
+.box_yellow {
+    width: 254px;
+    height: 76px;
+    background: url(../images/box_yellow_bg.jpg) repeat-x top;
+    border-right: 2px #fae4ac solid;
+    border-bottom: 2px #fae4ac solid;
+}
+
+.box_yellow .img {
+    width: 75px;
+    height: 66px;
+    float: left;
+    margin: 3px 0 0 3px;
+    border: 1px solid #FFF;
+}
+
+.box_yellow .right {
+    width: 165px;
+    height: 66px;
+    float: right;
+    margin: 3px 3px 0 0px;
+    overflow: hidden; /*hide too much text*/
+    line-height: normal;
+    color: #666666;
+    font-size: 11px;
+}
+
+.box_yellow .title {
+    color: #ffa200;
+    font-family: "Liberation Sans", arial;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.box_yellow p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.box_yellow .button {
+    margin: 5px 0 0 0;
+}
+
+/*blue*/
+
+.box_blue {
+    width: 254px;
+    height: 76px;
+    background: url(../images/box_blue_bg.jpg) repeat-x top;
+    border-right: 2px #a8e5f3 solid;
+    border-bottom: 2px #a8e5f3 solid;
+}
+
+.box_blue .img {
+    width: 75px;
+    height: 66px;
+    float: left;
+    margin: 3px 0 0 3px;
+    border: 1px solid #FFF;
+}
+
+.box_blue .right {
+    width: 165px;
+    height: 66px;
+    float: right;
+    margin: 3px 3px 0 0px;
+    overflow: hidden; /*hide too much text*/
+    line-height: normal;
+    color: #666666;
+    font-size: 11px;
+}
+
+.box_blue .title {
+    color: #2d9fce;
+    font-family: "Liberation Sans", arial;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.box_blue p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.box_blue .button {
+    margin: 5px 0 0 0;
+}
+
+/*pink*/
+
+.box_pink {
+    width: 254px;
+    height: 76px;
+    background: url(../images/box_pink_bg.jpg) repeat-x top;
+    border-right: 2px #ffb9d3 solid;
+    border-bottom: 2px #ffb9d3 solid;
+}
+
+.box_pink .img {
+    width: 75px;
+    height: 66px;
+    float: left;
+    margin: 3px 0 0 3px;
+    border: 1px solid #FFF;
+}
+
+.box_pink .right {
+    width: 165px;
+    height: 66px;
+    float: right;
+    margin: 3px 3px 0 0px;
+    overflow: hidden; /*hide too much text*/
+    line-height: normal;
+    color: #666666;
+    font-size: 11px;
+}
+
+.box_pink .title {
+    color: #ff005f;
+    font-family: "Liberation Sans", arial;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.box_pink p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.box_pink .button {
+    margin: 5px 0 0 0;
+}
+
+/*green*/
+
+.box_green {
+    width: 254px;
+    height: 76px;
+    background: url(../images/box_green_bg.jpg) repeat-x top;
+    border-right: 2px #d4de83 solid;
+    border-bottom: 2px #d4de83 solid;
+}
+
+.box_green .img {
+    width: 75px;
+    height: 66px;
+    float: left;
+    margin: 3px 0 0 3px;
+    border: 1px solid #FFF;
+}
+
+.box_green .right {
+    width: 165px;
+    height: 66px;
+    float: right;
+    margin: 3px 3px 0 0px;
+    overflow: hidden; /*hide too much text*/
+    line-height: normal;
+    color: #666666;
+    font-size: 11px;
+}
+
+.box_green .title {
+    color: #9db000;
+    font-family: "Liberation Sans", arial;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.box_green p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.box_green .button {
+    margin: 5px 0 0 0;
+}
+
+/*Contact Page*/
+
+.left_details {
+    float: left;
+    width: 240px;
+}
+
+.right_details {
+    float: left;
+    width: 415px;
+    margin-left: 50px;
+    padding-left: 20px;
+    border-left: 1px solid #dfecf2;
+}
+
+.contact_title {
+    color: #2d9fce;
+    font-weight: bold;
+    float: left;
+    width: 70px;
+}
+
+.contact_detail {
+    float: left;
+    width: 100px;
+    clear: right;
+}
+
+.forms {
+    background-color: #FFFFFF !important; /*the important gets rid of the yellow google toolbar field style*/
+    border: 1px solid #c8cdd2 !important;
+    margin: 3px 0px;
+    padding: 4px;
+}
+
+.blue {
+    color: #2d9fce;
+}
+
+#contact {
+    border: 0;
+}
+
+#contact label {
+    float: left;
+    width: 80px;
+    margin-right: 15px;
+    clear: left;
+    color: #2d9fce;
+    font-weight: bold;
+    text-align: right;
+    height: 32px;
+}
+
+#contact input, #contact textarea {
+
+}
+
+#contact .submit_button {
+    clear: left;
+    margin-left: 95px;
+}
